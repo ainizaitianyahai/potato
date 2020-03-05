@@ -1,0 +1,207 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/meta.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="form-task-edit">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务编号：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="${task.code!}" placeholder="" id="code" name="code">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">任务类型：</label>
+			<div class="formControls col-xs-8 col-sm-9"> 
+				<span class="select-box">
+					<select id="type" name="type" class="select" selectValue="${task.type!}">
+						<option value="bug">bug</option>
+						<option value="需求">需求</option>
+						<option value="任务">任务</option>	
+					</select>
+				</span> 
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">优先级：</label>
+			<div class="formControls col-xs-8 col-sm-9"> 
+				<span class="select-box">
+					<select name="priority" class="select" selectValue="${task.priority!}">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>	
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</span> 
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">影响分支：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="checkbox" name="branch" value="所有">所有
+				<input type="checkbox" name="branch" value="主线">主线
+				<input type="checkbox" name="branch" value="二部">二部
+				<input type="checkbox" name="branch" value="23">23
+				<input type="checkbox" name="branch" value="206">206
+				<input type="checkbox" name="branch" value="25">25
+				<input type="checkbox" name="branch" value="203">203
+				<input type="checkbox" name="branch" value="8511">8511
+				<input type="hidden" class="checkboxSelect" name="branchSelect" inputName="branch" value="${task.branch!}">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">说明：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="explain" id="explain" cols="" rows="" class="textarea"  placeholder="描述问题……" >${task.explain!}</textarea>
+				
+			</div>
+		</div>
+		<div name="bug" class="hideClass">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">分析人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.analyst!}" placeholder="" id="analyst" name="analyst" readonly="readonly" onclick="selectUser('analystId','analyst')" >
+					<input type="hidden" class="input-text" value="${task.analystId!}" placeholder="" id="analystId" name="analystId">
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">影响域：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="influence" id="influence" cols="" rows="" class="textarea"  placeholder="描述影响域……" >${task.influence!}</textarea>
+					
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">修改人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.modifier!}" placeholder="" id="modifier" name="modifier" readonly="readonly" onclick="selectUser('modifierId','modifier')" >
+					<input type="hidden" class="input-text" value="${task.modifierId!}" placeholder="" id="modifierId" name="modifierId">
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">验证人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.verify!}" placeholder="" id="verify" name="verify" readonly="readonly" onclick="selectUser('verifyId','verify')" >
+					<input type="hidden" class="input-text" value="${task.verifyId!}" placeholder="" id="verifyId" name="verifyId">
+				</div>
+			</div>
+		</div>
+		<div name="需求" class="hideClass">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">分析人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.rAnalyse!}" placeholder="" id="rAnalyse" name="rAnalyse" readonly="readonly" onclick="selectUser('rAnalyseId','rAnalyse')" >
+					<input type="hidden" class="input-text" value="${task.rAnalyseId!}" placeholder="" id="rAnalyseId" name="rAnalyseId">
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">需求分析说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="rAnalyseNote" id="rAnalyseNote" cols="" rows="" class="textarea"  placeholder="需求分析说明……" >${task.rAnalyseNote!}</textarea>
+					
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">设计人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.rDesign!}" placeholder="" id="rDesign" name="rDesign" readonly="readonly" onclick="selectUser('rDesignId','rDesign')" >
+					<input type="hidden" class="input-text" value="" placeholder="" id="rDesignId" name="rDesignId">
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">实现人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.rRealize!}" placeholder="" id="rRealize" name="rRealize" readonly="readonly" onclick="selectUser('rRealizeId','rRealize')" >
+					<input type="hidden" class="input-text" value="" placeholder="" id="rRealizeId" name="rRealizeId">
+				</div>
+			</div>
+		</div>
+		<div name="任务" class="hideClass">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">处理人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.tDispose!}" placeholder="" id="tDispose" name="tDispose" readonly="readonly" onclick="selectUser('tDisposeId','tDispose')" >
+					<input type="hidden" class="input-text" value="" placeholder="" id="tDisposeId" name="tDisposeId">
+				</div>
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">计划完成时间：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" readonly="readonly" value="${task.willFinishTime,'yyyy-MM-dd'}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" id="willFinishTime" name="willFinishTime" class="input-text Wdate">
+			</div>
+		</div>
+		
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<div name="bug" class="hideClass">
+					<button name="save" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+					<button name="save_analyse" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存分析</button>
+					<button name="save_modifier" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存解决</button>
+					<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+				</div>
+				<div name="需求" class="hideClass">
+					<button name="save" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+					<button name="save_analyse" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存分析</button>
+					<button name="save_design" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存设计</button>
+					<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+				</div>
+				<div name="任务" class="hideClass">
+					<button name="save" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+					<button name="save_publish" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存发布</button>
+					<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+				</div>
+				<input name="id" id="id" value="${task.id!}" type="hidden">
+				<input name="project" id="project" value="${task.project!}" type="hidden">
+				<input name="state" id="state" value="草稿" type="hidden">
+				<input name="createTime" id="createTime" value="${task.createTime!,'yyyy-MM-dd HH:mm:ss'}" type="hidden">
+				<input name="creator" id="creator" value="${task.creator!}" type="hidden">
+				<input name="creatorId" id="creatorId" value="${task.creatorId!}" type="hidden">
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/footerJS.html"){}%>
+<!--/_footer /作为公共模版分离出去-->
+<!-- 公用的选择人员页面 -->
+<%include("/user/select.html"){}%>
+
+<!--请在下方写此页面业务相关的脚本-->
+<%include("/task/taskJs.html"){}%>
+<script type="text/javascript">
+function save(){
+	$.ajax({
+		type: "POST",
+		url: ctxPath+"/task/updateJson",
+		async:true,
+		data: $("#form-task-edit").serializeArray(),
+		dataType:"json",
+		contentType:"application/x-www-form-urlencoded",
+ 	   	success: function(msg){
+			console.log(msg);
+			parent.location.replace(ctxPath+"/task/search");
+			layer_close();
+ 	   	},error:function(data,type, err){
+ 	   		console.log("message："+JSON.parse(data.responseText).message);
+			console.log("ajax错误类型："+type);
+			console.log(err);
+ 	   	}
+	});
+}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

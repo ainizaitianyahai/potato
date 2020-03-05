@@ -1,0 +1,44 @@
+<!--_footerJS 作为公共模版分离出去-->
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="${ctxPath}/static/static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/static/h-ui.admin/js/H-ui.admin.page.js"></script> 
+<!--/_footerJS /作为公共模版分离出去-->
+<script type="text/javascript" src="${ctxPath}/static/js/potato.js"></script>
+<script type="text/javascript">
+$(function(){
+	var v = '${session["huiskin"]!}';
+	if(v==undefined||v==""){
+		v = "default";
+	}
+	var hrefStr=$("#skin").attr("href");
+	var hrefRes=hrefStr.substring(0,hrefStr.lastIndexOf('skin/'))+'skin/'+v+'/skin.css';
+	$(window.frames.document).contents().find("#skin").attr("href",hrefRes);
+	
+	$(".skin").click(function(){
+		var huiskin = $(this).attr("data-val");
+		//换皮肤
+		$.ajax({
+		 	   type: "POST",
+		 	   url: ctxPath+"/skin",
+		 	   async:false,
+		 	   data: "huiskin="+huiskin,
+		 	   success: function(msg){
+		 		  console.log(msg);
+		 	   }
+		 	});
+	});
+	$(".textarea").each(function(){
+		var maxlength = $(this).attr("maxlength");
+		if(!maxlength){
+			maxlength = 200;
+		}
+		var minlength = $(this).attr("minlength");
+		if(!minlength){
+			minlength = 0;
+		}
+		$(this).Huitextarealength({maxlength:maxlength,minlength:minlength,exceed:false})
+	});
+})
+</script>
+

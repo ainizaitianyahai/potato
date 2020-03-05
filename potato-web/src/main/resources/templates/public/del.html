@@ -1,0 +1,32 @@
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">信息提示</h4>
+            </div>
+            <div class="modal-body">
+                 <span></span> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="delButton" onclick="$('#delFrom').submit()" autofocus>确认</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+ <!-- /.modal -->
+<form id="delFrom" name="delFrom" action="" method="post"></form>
+<script>
+	function del(obj,url){
+		$('#delModal').modal('show');
+		$('#delFrom').attr("action",url);
+		var msg = $(obj).attr("msg");
+		if(msg==undefined||msg==""||msg==null){
+			msg = "确认执行删除操作吗？";
+		}
+		$(".modal-body span").text(msg);
+	}
+</script>

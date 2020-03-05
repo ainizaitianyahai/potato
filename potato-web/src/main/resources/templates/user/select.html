@@ -1,0 +1,65 @@
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="userModalLabel">选择人员</h4>
+              </div>
+              <div class="modal-body">
+				<table class="table" id="selectUser">
+                     <thead>
+                         <tr>
+                             <th>选择</th>
+                             <th>序号</th>
+                             <th>姓名</th>
+                             <th>联系方式</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                     	<% for(user in userlist!){%>
+							<tr>
+	                             <td><input type="radio" name="selectUserId" value="${user.userId}" userName="${user.userName}"/></td>
+	                             <td>${userLP.index}</td>
+	                             <td>${user.userName}</td>
+	                             <td>${user.phone}</td>
+	                         </tr>
+						<%}%>
+                     </tbody>
+                 </table>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" id="selectButton" onclick="selectUserComplete()">选择</button>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">取消</button>
+              </div>
+          </div>
+          <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+  </div>
+   <!-- /.modal -->
+   
+   <script type="text/javascript">
+  	
+   	var userId_temp;
+	var userName_temp;
+   	function selectUser(userId,userName){
+   		$("input[type=radio][name=selectUserId]").removeAttr("checked");
+   		userId_temp = userId;
+   		userName_temp = userName;
+   		var obj = $("#"+userId);
+   		var value = obj.val();
+   		if(value!=null&&""!=value){
+   			$("input[type=radio][name=selectUserId][value="+value+"]").prop("checked","checked");
+   		}
+   		$('#userModal').modal('show');
+    }
+	function selectUserComplete(){
+		var selectObj = $("input[type=radio][name=selectUserId]:checked");
+		$("#"+userId_temp).val(selectObj.val());
+		$("#"+userName_temp).val(selectObj.attr("userName"));
+		$('#userModal').modal('hide');
+		userId_temp="";
+		userName_temp="";
+    }
+	</script>
+	

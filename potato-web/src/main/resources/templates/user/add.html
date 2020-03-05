@@ -1,0 +1,106 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/meta.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="form-user-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>人员登录id：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="人员登录id" id="userId" name="userId">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">人员姓名：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="人员姓名" id="userName" name="userName">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">密码：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="********" id="password" name="password">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">身份证号：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="身份证号" id="cardId" name="cardId">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">联系方式：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="phone" name="phone">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">状态：</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select name="state" class="select">
+					<option value="在岗">在岗</option>
+					<option value="离职">离职</option>
+				</select>
+				</span> 
+			</div>
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button id="save" class="btn btn-secondary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/footerJS.html"){}%>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="${ctxPath}/static/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery.validation/1.14.0/messages_zh.js"></script>   
+<script type="text/javascript" src="${ctxPath}/static/lib/webuploader/0.1.5/webuploader.min.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/ueditor/1.4.3/ueditor.config.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#save_submit").click(function(){
+		$("#state").val("分析中");
+		save();
+	});
+	$("#save").click(function(){
+		save();
+	});
+});
+function save(){
+	$.ajax({
+		type: "POST",
+		url: ctxPath+"/user/saveJson",
+		async:true,
+		data: $("#form-user-add").serializeArray(),
+		dataType:"json",
+		contentType:"application/x-www-form-urlencoded",
+ 	   	success: function(msg){
+			console.log(msg);
+			parent.location.replace(parent.location.href);
+			layer_close();
+ 	   	},error:function(data,type, err){
+ 	   		console.log("message："+JSON.parse(data.responseText).message);
+			console.log("ajax错误类型："+type);
+			console.log(err);
+ 	   	}
+	});
+}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/meta.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+</head>
+<body>
+<!--_header 作为公共模版分离出去-->
+<%include("/public/header.html"){}%>
+<!--/_header 作为公共模版分离出去-->
+
+<!--_menu 作为公共模版分离出去-->
+<%include("/public/menu.html"){}%>
+<!--/_menu 作为公共模版分离出去-->
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i>
+		人员管理
+		<span class="c-gray en">&gt;</span>
+		<a href="${ctxPath}/user/list" class="maincolor selectMenu" title="任务列表">人员列表</a>
+		<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+	</nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			<div class="cl pd-5 bg-1 bk-gray mt-20">
+				<span class="l">
+					<a class="btn btn-primary radius" data-title="添加人员" onclick="openUrl('添加人员','${ctxPath}/user/add')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 新建</a>
+				</span>
+				<span class="r">共有数据：<strong>${list.~size}</strong> 条</span>
+			</div>
+			<div class="mt-20">
+				<table class="table table-border table-bordered table-bg table-hover table-sort table-txt">
+					<thead>
+						<tr  class="text-c">
+							<th>序号</th>
+							<th>登录名</th>
+							<th>名称</th>
+						    <th>联系方式</th>
+						    <th>状态</th>
+						    <th>相关操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<% for(user in list){%>
+						<tr  class="text-c">
+                            <td>${userLP.index}</td>
+                            <td>${user.userId}</td>
+                            <td>${user.userName}</td>
+                            <td>${user.phone}</td>
+                            <td>${user.state}</td>
+                            <td class="center">
+                            	<a title="编辑" href="javascript:;" onclick="openUrl('编辑人员','${ctxPath}/user/edit?id=${user.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> 
+                            	<a title="删除" href="javascript:;" onclick="del(this,'${ctxPath}/user/del?id=${user.id}')" msg="确认要删除${user.userName}人员吗？" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+                            </td>
+                        </tr>
+					<%}%>
+					</tbody>
+				</table>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/footerJS.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+<!-- 公用删除提示 -->
+<%include("/public/del.html"){}%>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="${ctxPath}/static/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="${ctxPath}/static/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/static/lib/laypage/1.2/laypage.js"></script>
+
+<script type="text/javascript">
+$('.table-sort').dataTable({
+	"aaSorting": [[ 0, "desc" ]],//默认第几个排序
+	"bStateSave": true,//状态保存
+	"aoColumnDefs": [
+		//{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		{"orderable":false}// ,"aTargets":[0,8]不参与排序的列
+	]
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+
+</body>
+</html>

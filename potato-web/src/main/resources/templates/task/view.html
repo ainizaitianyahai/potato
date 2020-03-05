@@ -1,0 +1,206 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/meta.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+</head>
+<body>
+<article class="page-container">
+	<form class="form form-horizontal" id="form-task-view">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务编号：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="${task.code!}" placeholder="" id="code" name="code">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">任务类型：</label>
+			<div class="formControls col-xs-8 col-sm-9"> 
+				<span class="select-box">${task.type!}</span> 
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">优先级：</label>
+			<div class="formControls col-xs-8 col-sm-9"> 
+				<span class="select-box">${task.priority!}</span> 
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">影响分支：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="checkbox" name="branch" value="所有">所有
+				<input type="checkbox" name="branch" value="主线">主线
+				<input type="checkbox" name="branch" value="二部">二部
+				<input type="checkbox" name="branch" value="23">23
+				<input type="checkbox" name="branch" value="206">206
+				<input type="checkbox" name="branch" value="25">25
+				<input type="checkbox" name="branch" value="203">203
+				<input type="checkbox" name="branch" value="8511">8511
+				<input type="hidden" class="checkboxSelect" name="branchSelect" inputName="branch" value="${task.branch!}">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">说明：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="explain" id="explain" cols="" rows="" class="textarea"  placeholder="描述问题……" >${task.explain!}</textarea>
+				
+			</div>
+		</div>
+		<div name="bug" class="${task.type=='bug'?'':'hideClass'}">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">分析人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.analyst!}" placeholder="" id="analyst" name="analyst" readonly="readonly" >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">影响域：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="influence" id="influence" cols="" rows="" class="textarea disabled"  placeholder="描述影响域……" >${task.influence!}</textarea>
+					
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">修改人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.modifier!}" placeholder="" id="modifier" name="modifier" readonly="readonly" >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">更改说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="modifierNote" id="modifierNote" cols="" rows="" class="textarea"  placeholder="描述更改说明……" >${task.modifierNote!}</textarea>
+					
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">验证人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.verify!}" placeholder="" id="verify" name="verify" readonly="readonly"  >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">验证说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="verifyNote" id="verifyNote" cols="" rows="" class="textarea disabled"  placeholder="描述验证说明……" >${task.verifyNote!}</textarea>
+					
+				</div>
+			</div>
+		</div>
+		<div name="需求" class="${task.type=='需求'?'':'hideClass'}">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">分析人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.rAnalyse!}" placeholder="" id="rAnalyse" name="rAnalyse" readonly="readonly" >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">需求分析说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="rAnalyseNote" id="rAnalyseNote" cols="" rows="" class="textarea"  placeholder="需求分析说明……" >${task.rAnalyseNote!}</textarea>
+					
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">设计人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.rDesign!}" placeholder="" id="rDesign" name="rDesign" readonly="readonly" >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">需求设计说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="rDesignNote" id="rDesignNote" cols="" rows="" class="textarea disabled"  placeholder="需求设计说明……" >${task.rDesignNote!}</textarea>
+					
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">实现人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.rRealize!}" placeholder="" id="rRealize" name="rRealize" readonly="readonly" >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">需求实现说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="rRealizeNote" id="rRealizeNote" cols="" rows="" class="textarea disabled"  placeholder="需求实现说明……" >${task.rRealizeNote!}</textarea>
+					
+				</div>
+			</div>
+		</div>
+		<div name="任务" class="${task.type=='任务'?'':'hideClass'}">
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">处理人：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<input type="text" class="input-text" value="${task.tDispose!}" placeholder="" id="tDispose" name="tDispose" readonly="readonly" >
+				</div>
+			</div>
+			<div class="row cl">
+				<label class="form-label col-xs-4 col-sm-2">任务处理说明：</label>
+				<div class="formControls col-xs-8 col-sm-9">
+					<textarea name="tDisposeNote" id="tDisposeNote" cols="" rows="" class="textarea disabled"  placeholder="任务处理说明……" >${task.tDisposeNote!}</textarea>
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">计划完成时间：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" readonly="readonly" value="${task.willFinishTime,'yyyy-MM-dd'}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" id="willFinishTime" name="willFinishTime" class="input-text Wdate">
+			</div>
+		</div>
+	</form>
+</article>
+<div  style="margin-top: 5px;display: ${ isEmpty(recordList)?"none":""}">
+	<table class="table table-border table-bordered table-bg table-hover table-sort table-txt">
+		<thead>
+			<tr  class="text-c">
+				<th>序号</th>
+			    <th>创建者</th>
+			    <th>创建时间</th>
+			    <th>计划完成时间</th>
+			    <th>优先级</th>
+			    <th>影响分支</th>
+			    <th>状态</th>
+			</tr>
+		</thead>
+		<tbody>
+		<% for(task in recordList){%>
+			<tr  class="text-c">
+                <td>${taskLP.index}</td>
+                <td>${task.creator}</td>
+                <td>${task.createTime,"yyyy-MM-dd HH:mm:ss"}</td>
+                <td>${task.willFinishTime,"yyyy-MM-dd"}</td>
+                <td>${task.priority}</td>
+                <td>${task.branch}</td>
+                <td>${task.state}</td>
+            </tr>
+		<%}%>
+		</tbody>
+	</table>
+	</div>
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/footerJS.html"){}%>
+<!--/_footer /作为公共模版分离出去-->
+<!--请在下方写此页面业务相关的脚本-->
+<%include("/task/taskJs.html"){}%>
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="${ctxPath}/static/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/jquery.validation/1.14.0/messages_zh.js"></script>   
+<script type="text/javascript" src="${ctxPath}/static/lib/webuploader/0.1.5/webuploader.min.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/ueditor/1.4.3/ueditor.config.js"></script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> 
+<script type="text/javascript" src="${ctxPath}/static/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<!--/请在上方写此页面业务相关的脚本-->
+<script type="text/javascript">
+	$(function(){
+		formDisabled("form-task-view");
+	})
+</script>
+</body>
+</html>

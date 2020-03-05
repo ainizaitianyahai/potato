@@ -1,0 +1,174 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/meta.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+<meta name="keywords" content="potato系统首页">
+<meta name="description" content="potato系统首页">
+</head>
+<body>
+<!--_header 作为公共模版分离出去-->
+<%include("/public/header.html"){}%>
+<!--/_header 作为公共模版分离出去-->
+
+<!--_menu 作为公共模版分离出去-->
+<%include("/public/menu.html"){}%>
+<!--/_menu 作为公共模版分离出去-->
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i>
+		任务管理
+		<span class="c-gray en">&gt;</span>
+		<a href="${ctxPath}/index" class="maincolor selectMenu" title="首页">首页</a>
+		<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+	</nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			<form action="${ctxPath}/task/myTaskList" id="search" name="search" method="post">
+				<div class="">
+					日期范围：
+					<input type="text" readonly="readonly" value="${task.beginDate!,"yyyy-MM-dd"}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',maxDate:'#F{$dp.$D(\'endDate\')}'})" id="beginDate" name="beginDate" class="input-text Wdate" style="width:120px;">
+					-
+					<input type="text" readonly="readonly" value="${task.endDate!,"yyyy-MM-dd"}" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd',minDate:'#F{$dp.$D(\'beginDate\')}'})" id="endDate" name="endDate" class="input-text Wdate" style="width:120px;">
+					<input type="text" name="code" id="code" value="${task.code!}" placeholder=" 任务编号" style="width:250px" class="input-text">
+					<input type="text" name="explain" id="explain" value="${task.explain!}" placeholder=" 任务内容" style="width:250px" class="input-text">
+					<button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+				</div>
+				<div class="">
+					类型：
+					<div class="div-search">
+						<input class="btn radius btn-blue" type="button" value="全部" inputId="type" form="search">
+						<input class="btn radius btn-blue" type="button" value="bug"  inputId="type" form="search">
+						<input class="btn radius btn-blue" type="button" value="需求" inputId="type" form="search">
+						<input class="btn radius btn-blue" type="button" value="任务" inputId="type" form="search">
+						<input name="type" id="type" value="${task.type!}" type="hidden" btn="btn-blue"/>
+					</div>
+				</div>
+				<div class="">
+					状态：
+					<div class="div-search">
+						<input class="btn radius btn-green" type="button" value="全部" inputId="state" form="search">
+						<input class="btn radius btn-green" type="button" value="分析中" inputId="state" form="search">
+						<input class="btn radius btn-green" type="button" value="解决中" inputId="state" form="search">
+						<input class="btn radius btn-green" type="button" value="已解决" inputId="state" form="search">
+						<input class="btn radius btn-green" type="button" value="设计中" inputId="state" form="search">
+						<input class="btn radius btn-green" type="button" value="实现中" inputId="state" form="search">
+						<input class="btn radius btn-green" type="button" value="已发布" inputId="state" form="search">
+						<input name="state" id="state" value="${task.state!}" type="hidden" btn="btn-green"/>
+					</div>
+				</div>
+				<div class="">
+					分支：
+					<div class="div-search">	
+						<input class="btn radius btn-yellow" type="button" value="全部" inputId="branch" form="search">
+						<input class="btn radius btn-yellow" type="button" value="所有" inputId="branch" form="search">
+						<input class="btn radius btn-yellow" type="button" value="主线" inputId="branch" form="search">
+						<input class="btn radius btn-yellow" type="button" value="23" inputId="branch" form="search">
+						<input class="btn radius btn-yellow" type="button" value="12" inputId="branch" form="search">
+						<input name="branch" id="branch" value="${task.branch!}" type="hidden" btn="btn-yellow"/>
+					</div>
+				</div>
+			</form>
+			<div class="mt-20">
+				<table class="table table-border table-bordered table-bg table-hover table-sort table-txt">
+					<thead>
+						<tr  class="text-c">
+							<th>序号</th>
+							<th>任务编号</th>
+						    <th>说明</th>
+						    <th>类型</th>
+						    <th>创建者</th>
+						    <th>创建时间</th>
+						    <th>计划完成时间</th>
+						    <th>优先级</th>
+						    <th>影响分支</th>
+						    <th>状态</th>
+						    <th>相关操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					<% for(task in list){%>
+						<tr  class="text-c">
+                            <td>${taskLP.index}</td>
+                            <td>${task.code}</td>
+                            <td width="100px" title="${task.explain}"><div class="td-txt">${task.explain}</div></td>
+                            <td>${task.type}</td>
+                            <td>${task.creator}</td>
+                            <td>${task.createTime,"yyyy-MM-dd HH:mm:ss"}</td>
+                            <td>${task.willFinishTime,"yyyy-MM-dd"}</td>
+                            <td>${task.priority}</td>
+                            <td>${task.branch}</td>
+                            <td>${task.state}</td>
+                            <td class="center">
+                            	<%
+                            		if(task.type=='bug'){
+                            			if(task.state=='分析中'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('分析问题','${ctxPath}/task/analyse?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%	
+                            			}else if(task.state=='解决中'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('解决问题','${ctxPath}/task/modifier?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%	
+                            			}else if(task.state=='已解决'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('验证问题','${ctxPath}/task/verify?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%	
+                            			}
+                            		}else if(task.type=='需求'){
+                            			if(task.state=='分析中'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('需求分析','${ctxPath}/task/requirementAnalyse?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%	
+                            			}else if(task.state=='设计中'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('需求设计','${ctxPath}/task/requirementDesign?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%	
+                            			}else if(task.state=='实现中'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('需求实现','${ctxPath}/task/requirementRealize?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%
+                            			}
+                            		}else if(task.type=='任务'){
+                            	%>
+		                            	<a title="编辑" href="javascript:;" onclick="openUrl('处理任务','${ctxPath}/task/disposeTask?id=${task.id}')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+                            	<%	
+                            		}
+                            	%>
+                            </td>
+                        </tr>
+					<%}%>
+					</tbody>
+				</table>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!--_footer 作为公共模版分离出去-->
+<%include("/public/footerJS.html"){}%>
+<!--_footer 作为公共模版分离出去-->
+<!-- 公用删除提示 -->
+<%include("/public/del.html"){}%>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="${ctxPath}/static/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="${ctxPath}/static/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="${ctxPath}/static/lib/laypage/1.2/laypage.js"></script>
+
+<script type="text/javascript">
+$('.table-sort').dataTable({
+	"aaSorting": [[ 0, "desc" ]],//默认第几个排序
+	"bStateSave": true,//状态保存
+	"aoColumnDefs": [
+		//{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		{"orderable":false}// ,"aTargets":[0,8]不参与排序的列
+	]
+});
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+
+</body>
+</html>
