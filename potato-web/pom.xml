@@ -84,7 +84,7 @@
 		  <artifactId>fastjson</artifactId>
 		  <version>1.2.9</version>
 		</dependency>
-		<!-- shiro权限控制框架 -->
+		<!-- shiro权限控制框架-->
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-spring</artifactId>
@@ -94,7 +94,7 @@
 	        <groupId>org.apache.shiro</groupId>
 	        <artifactId>shiro-core</artifactId>
 	        <version>1.2.2</version>
-	    </dependency>
+	    </dependency> 
 	    <!-- shiro ehcache -->
        <dependency>
            <groupId>org.apache.shiro</groupId>
