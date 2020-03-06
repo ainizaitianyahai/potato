@@ -31,7 +31,9 @@ public class TaskServiceImpl extends BaseServiceImpl<STask> implements TaskServi
 	public List<STask> list(STask task){
 		return this.taskDao.search(task);
 	}
-	
+	/**
+	 * 插入任务
+	 */
 	public void insert(STask task) {
 		//创建时间
 		task.setCreateTime(new Date());
@@ -42,7 +44,9 @@ public class TaskServiceImpl extends BaseServiceImpl<STask> implements TaskServi
 			this.taskRecordService.insert(record);
 		}
 	}
-	
+	/**
+	 * 修改任务
+	 */
 	public void updateById(STask task) {
 		if(!"草稿".equals(task.getState())) {
 			//判断是否不存储任务修改记录 true:不存储，false:存储
