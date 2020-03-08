@@ -17,6 +17,7 @@ encoding//src/main/resources/templates/task/disposeTask.html=UTF-8
 encoding//src/main/resources/templates/task/edit.html=UTF-8
 encoding//src/main/resources/templates/task/list.html=UTF-8
 encoding//src/main/resources/templates/task/modifierBug.html=UTF-8
+encoding//src/main/resources/templates/task/myTaskList.html=UTF-8
 encoding//src/main/resources/templates/task/requirementAnalyse.html=UTF-8
 encoding//src/main/resources/templates/task/requirementDesign.html=UTF-8
 encoding//src/main/resources/templates/task/requirementRealize.html=UTF-8

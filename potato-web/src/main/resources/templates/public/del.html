@@ -18,7 +18,9 @@
     <!-- /.modal-dialog -->
 </div>
  <!-- /.modal -->
-<form id="delFrom" name="delFrom" action="" method="post"></form>
+<form id="delFrom" name="delFrom" action="" method="post">
+	<input name="token"  type="hidden" value="${token}"/>
+</form>
 <script>
 	function del(obj,url){
 		$('#delModal').modal('show');

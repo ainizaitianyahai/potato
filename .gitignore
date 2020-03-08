@@ -1,2 +1,8 @@
 */target/*
+*/.idea/*
 */CATALINA_BASE_IS_UNDEFINED/*
+/.idea/
+.idea
+.settings
+.classpath
+.factorypath

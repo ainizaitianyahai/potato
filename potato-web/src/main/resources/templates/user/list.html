@@ -18,14 +18,13 @@
 	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i>
 		人员管理
 		<span class="c-gray en">&gt;</span>
-		<a href="${ctxPath}/user/list" class="maincolor selectMenu" title="任务列表">人员列表</a>
-		<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+		<a href="javascript:;" onclick="toMenu('/user/list')" class="maincolor selectMenu" title="任务列表">人员列表</a>
 	</nav>
 	<div class="Hui-article">
 		<article class="cl pd-20">
 			<div class="cl pd-5 bg-1 bk-gray mt-20">
 				<span class="l">
-					<a class="btn btn-primary radius" data-title="添加人员" onclick="openUrl('添加人员','${ctxPath}/user/add')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 新建</a>
+					<a class="btn btn-primary radius" data-title="添加人员" onclick="openUrl('添加人员','${ctxPath}/user/add?')" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 新建</a>
 				</span>
 				<span class="r">共有数据：<strong>${list.~size}</strong> 条</span>
 			</div>

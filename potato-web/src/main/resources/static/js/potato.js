@@ -78,6 +78,8 @@ $(function(){
 
 /*打开连接*/
 function openUrl(title,url,w,h){
+	var tokenObj = $("input[name=token]");
+	url = url+"&token="+tokenObj.val();
 	layer_show(title,url,w,h);
 }
 function formDisabled(id){

@@ -18,7 +18,9 @@
     <!-- /.modal-dialog -->
 </div>
  <!-- /.modal -->
-<form id="cancelFrom" name="cancelFrom" action="" method="post"></form>
+<form id="cancelFrom" name="cancelFrom" action="" method="post">
+	<input name="token" id="token" type="hidden" value="${token}"/>
+</form>
 <script>
 	function cancel(obj,url){
 		$('#cancelModal').modal('show');

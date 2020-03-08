@@ -40,7 +40,7 @@ public class ShiroConfiguration {
 		filterChainDefinitionMap.put("/swagger-resources/**", "anon");
 		filterChainDefinitionMap.put("/v2/api-docs/**", "anon");
 		filterChainDefinitionMap.put("/webjars/springfox-swagger-ui/**", "anon");
-		filterChainDefinitionMap.put("/user/listJson", "anon");
+		//filterChainDefinitionMap.put("/user/listJson", "anon");
 		//swagger end
 		//elasticSearch过滤
 		filterChainDefinitionMap.put("/es/**", "anon");
@@ -49,9 +49,9 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/favicon.ico", "anon");
         filterChainDefinitionMap.put("/login*", "anon"); //表示可以匿名访问
         filterChainDefinitionMap.put("/login.html", "anon"); //表示可以匿名访问
-        filterChainDefinitionMap.put("/loginUser","anon");
+        //filterChainDefinitionMap.put("/loginUser","anon");
         filterChainDefinitionMap.put("/test/**","anon");
-        filterChainDefinitionMap.put("/activiti/**","anon");
+        //filterChainDefinitionMap.put("/activiti/**","anon");
         filterChainDefinitionMap.put("/logout*","anon");
         filterChainDefinitionMap.put("/error.html*","anon");
         filterChainDefinitionMap.put("/static/*", "anon");//表示可以匿名访问

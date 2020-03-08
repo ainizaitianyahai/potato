@@ -168,13 +168,13 @@
 				<input name="createTime" id="createTime" value="${task.createTime!,'yyyy-MM-dd HH:mm:ss'}" type="hidden">
 				<input name="creator" id="creator" value="${task.creator!}" type="hidden">
 				<input name="creatorId" id="creatorId" value="${task.creatorId!}" type="hidden">
+				<input name="token" id="token" type="hidden" value="${token}"/>
 			</div>
 		</div>
 	</form>
 </article>
 
-<!--_footer 作为公共模版分离出去-->
-<%include("/public/footerJS.html"){}%>
+<!--_footer 作为公共模<%include("/public/footerJS.html"){}%>
 <!--/_footer /作为公共模版分离出去-->
 <!-- 公用的选择人员页面 -->
 <%include("/user/select.html"){}%>

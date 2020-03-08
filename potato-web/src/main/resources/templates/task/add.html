@@ -160,6 +160,7 @@
 					<button name="save_publish" class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 保存发布</button>
 					<button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 				</div>
+				<input name="token" id="token" type="hidden" value="${token}"/>
 				<input name="state" id="state" value="草稿" type="hidden">
 				<input name="creator" id="creator" value="${session["user"].userName!}" type="hidden">
 				<input name="creatorId" id="creatorId" value="${session["user"].userId!}" type="hidden">
