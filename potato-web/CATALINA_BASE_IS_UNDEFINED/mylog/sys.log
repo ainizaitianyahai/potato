@@ -1,195 +1,74 @@
-2020-03-08 00:00:16,964 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:18,755 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:18,770 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:18,783 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:18,795 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:18,801 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:18,811 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:20,649 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:20,774 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:20,985 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,115 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,273 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,285 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,292 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,298 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,304 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,310 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:00:21,318 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:01:05,509 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 12320 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:01:05,509 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:02:33,793 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 11312 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:02:33,809 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:02:46,841 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 13.499 seconds (JVM running for 14.549)
-2020-03-08 00:03:40,626 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 20180 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:03:40,626 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:03:53,987 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 13.793 seconds (JVM running for 14.839)
-2020-03-08 00:05:30,227 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 20180 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:05:30,227 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:05:37,043 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 6.926 seconds (JVM running for 117.896)
-2020-03-08 00:06:07,341 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:06:07,341 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:06:20,538 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 13.638 seconds (JVM running for 14.669)
-2020-03-08 00:11:40,075 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:11:40,075 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:11:47,387 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 7.39 seconds (JVM running for 341.518)
-2020-03-08 00:12:36,284 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:12:36,284 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:12:42,734 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 6.513 seconds (JVM running for 396.865)
-2020-03-08 00:12:47,653 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:12:47,653 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:12:53,650 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 6.044 seconds (JVM running for 407.787)
-2020-03-08 00:13:28,714 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:13:28,714 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:13:34,603 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.952 seconds (JVM running for 448.734)
-2020-03-08 00:14:35,510 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:14:35,510 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:14:41,062 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.614 seconds (JVM running for 515.201)
-2020-03-08 00:16:11,074 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7344 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:16:11,074 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:16:17,454 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 6.708 seconds (JVM running for 611.594)
-2020-03-08 00:20:24,651 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 7736 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:20:24,654 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:20:33,439 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:20:33,446 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:20:46,302 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 13.361 seconds (JVM running for 14.402)
-2020-03-08 00:21:24,380 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:21:24,607 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:21:33,583 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:21:33,765 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:22:02,197 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:22:02,264 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:22:37,191 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:22:37,306 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:22:40,962 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:22:41,015 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:23:46,412 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:23:46,458 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:23:57,636 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:23:57,686 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:24:05,239 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:24:05,281 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:25:24,000 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:25:24,000 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:25:30,881 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 6.944 seconds (JVM running for 298.996)
-2020-03-08 00:25:44,444 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:25:44,525 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:27:21,774 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:27:21,774 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:27:27,548 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.837 seconds (JVM running for 415.657)
-2020-03-08 00:28:26,078 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:28:26,094 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:28:31,642 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.611 seconds (JVM running for 479.751)
-2020-03-08 00:29:32,443 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:29:32,443 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:29:38,111 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.731 seconds (JVM running for 546.221)
-2020-03-08 00:30:04,833 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:30:04,833 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:30:10,137 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.351 seconds (JVM running for 578.248)
-2020-03-08 00:30:35,645 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:30:35,726 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:31:45,237 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:31:45,237 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:31:50,702 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.512 seconds (JVM running for 678.811)
-2020-03-08 00:32:21,955 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:33:25,055 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:33:25,055 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:33:30,514 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.506 seconds (JVM running for 778.615)
-2020-03-08 00:34:10,547 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15696 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:34:10,547 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:34:23,156 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 1152 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:34:23,172 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:35:38,554 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 10540 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:35:38,554 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:35:48,555 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 10.297 seconds (JVM running for 10.986)
-2020-03-08 00:35:59,984 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:36:08,520 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:38:13,703 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 10540 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:38:13,703 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:38:18,558 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 4.918 seconds (JVM running for 160.988)
-2020-03-08 00:38:21,734 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:39:09,553 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:39:09,604 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:39:24,246 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:39:24,291 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:39:39,552 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 10540 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:39:39,552 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:42:31,452 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 18636 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:42:31,452 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:42:44,763 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 13.793 seconds (JVM running for 14.805)
-2020-03-08 00:42:50,567 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:42:51,011 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:42:52,471 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:42:52,521 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:43:31,541 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:44:15,286 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:45:12,922 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 18636 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:45:12,922 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:45:20,115 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 7.264 seconds (JVM running for 170.156)
-2020-03-08 00:45:27,133 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:45:27,635 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:45:55,392 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:45:55,531 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:36,366 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:36,447 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:37,365 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:37,406 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:40,363 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:40,408 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:41,884 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:41,921 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:43,133 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:44,355 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:44,392 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:46,227 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:48,927 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:47:48,972 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:48:00,379 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 17264 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 00:48:00,379 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 00:48:12,740 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 12.802 seconds (JVM running for 13.826)
-2020-03-08 00:48:30,089 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:49:46,013 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 00:49:46,065 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:10:20,058 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 6140 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 21:10:20,058 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 21:10:30,427 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 10.702 seconds (JVM running for 11.621)
-2020-03-08 21:10:54,513 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:11:17,985 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:11:25,243 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:14:04,022 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 19156 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 21:14:04,033 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 21:14:12,122 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:14:27,512 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15280 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 21:14:27,528 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 21:14:37,803 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 10.556 seconds (JVM running for 11.222)
-2020-03-08 21:14:38,493 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:14:51,574 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:15:10,643 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:20:16,105 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:20:26,300 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:21:39,549 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:22:16,285 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 15280 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
-2020-03-08 21:22:16,285 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
-2020-03-08 21:22:21,294 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 5.072 seconds (JVM running for 474.727)
-2020-03-08 21:22:23,154 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:22:27,002 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:24:41,604 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:32:28,451 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:32:37,768 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:32:41,522 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:35:28,266 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:41:24,468 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:44:57,052 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:45:15,667 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:45:22,353 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:46:55,412 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:47:03,947 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:47:09,515 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:47:13,393 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:47:30,892 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:48:26,171 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:48:34,787 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:49:13,508 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:49:35,957 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:50:15,708 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
-2020-03-08 21:50:49,150 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
+2021-02-07 23:27:57,633 INFO (StartupInfoLogger.java:48)- Starting PotatoApplication on LAPTOP-E91ODHAO with PID 1056 (D:\git\repository\potato\potato-web\target\classes started by ghw in D:\git\repository\potato\potato-web)
+2021-02-07 23:27:57,653 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2021-02-07 23:28:10,968 INFO (StartupInfoLogger.java:57)- Started PotatoApplication in 13.791 seconds (JVM running for 14.961)
+2021-02-07 23:29:37,789 INFO (ErrorController.java:59)- 500,Submitted credentials for token [org.apache.shiro.authc.UsernamePasswordToken - zhangsan, rememberMe=false] did not match the expected credentials.
+org.apache.shiro.authc.IncorrectCredentialsException: Submitted credentials for token [org.apache.shiro.authc.UsernamePasswordToken - zhangsan, rememberMe=false] did not match the expected credentials.
+	at org.apache.shiro.realm.AuthenticatingRealm.assertCredentialsMatch(AuthenticatingRealm.java:600)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:578)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:270)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:256)
+	at com.potato.web.controller.LoginController.loginUser(LoginController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.potato.web.filter.JwtFilter.doFilter(JwtFilter.java:47)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-02-07 23:35:01,067 INFO (ErrorController.java:59)- 401,未授权或者授权已经过期
